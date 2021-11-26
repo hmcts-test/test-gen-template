@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "abcd-defg"
+  description: asda
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_abcd/test-gen-template
+    github.com/project-slug: 'hmcts-test/test-gen-template'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=asda
+      title: asda on Slack
+      icon: chat
+spec:
+  type: service
+  system: abcd
+  lifecycle: experimental
+  owner: dts_platform_operations
